@@ -65,7 +65,7 @@ public class WordServiceImpl implements WordService {
                 Map.Entry<String, LinkedHashMap> firstRequestType = it2.next();
                 LinkedHashMap content = firstRequestType.getValue();
                 title = String.valueOf(((List) content.get("tags")).get(0));
-                description = String.valueOf(content.get("description"));
+                description = String.valueOf(content.get("summary"));//String.valueOf(content.get("description"));
                 List<String> consumes = (List) content.get("consumes");
                 if (consumes != null && consumes.size() > 0) {
                     for (String consume : consumes) {

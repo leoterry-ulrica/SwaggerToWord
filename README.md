@@ -30,4 +30,10 @@
 2、命名规范以及增加异常处理，对于无法处理的HTTP请求返回空字符串。<br/>
 3、修改之前导入data.josn的方式，变成restTemplate.getForObject("SwaggerJson的url地址",Map.class);的动态获取方式。
 </p>
+<p>----------------------------------</p>
+<h5>版本：SwaggerToWord 1.3 (2018-12-05)</h5>
+<p>更新说明：</P>
+<p>
+1、解决接口描述为null的bug问题。<br/>
+</p>
   
